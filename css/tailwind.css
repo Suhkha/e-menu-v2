@@ -1,3 +1,125 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body, burguer {
+  outline: none !important;
+}
+
+.wrapper-item {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.active {
+  border: solid 2px;
+}
+
+
+/*menu*/
+.burguer_container {
+  transition: opacity .25s ease;
+}
+
+/* .burguer_container.active-burguer .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
+}
+.burguer_container.active-burguer .middle {
+  opacity: 0;
+  background: #FFF;
+}
+.burguer_container.active-burguer .bottom {
+  -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+          transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
+} */
+/* .burguer_container span {
+  background: #FF5252;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all .35s ease;
+  transition: all .35s ease;
+  cursor: pointer;
+}
+.burguer_container span:nth-of-type(2) {
+  top: 11px;
+}
+.burguer_container span:nth-of-type(3) {
+  top: 22px;
+} */
+
+.overlay {
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+}
+.overlay.open {
+  opacity: .9;
+  visibility: visible;
+  height: 100%;
+}
+.overlay.open li {
+  animation: fadeInRight .5s ease forwards;
+  animation-delay: .35s;
+}
+
+.overlay.open li:nth-of-type(2) {
+  animation-delay: .4s;
+}
+
+.overlay.open li:nth-of-type(3) {
+  animation-delay: .45s;
+}
+
+.overlay nav {
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.overlay ul li {
+  height: 25%;
+  height: calc(100% / 4);
+  min-height: 50px;
+}
+
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+}
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  transition: .35s;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
