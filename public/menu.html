@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu</title>
+  <title>Menú</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <main>
     
-    <div class="mx-4 lg:m-auto lg:w-3/6">
-      <div class="my-4">
-        <div class="burguer_container fixed cursor-pointer z-50 hover:opacity-75" id="toggle">
-          <img src="img/icons/menu.png" class="burguer-icon block w-6 h-auto" alt="">
+    <div id="header" class="mx-4 lg:m-auto lg:w-3/6">
+      <div id="header-menu" class="my-4">
+        <div class="burguer_container fixed cursor-pointer z-50 hover:opacity-75" id="toggle-menu">
+          <img src="img/icons/menu_dark.png" class="burguer-icon block w-6 h-auto" alt="">
         </div>
-        <div class="overlay fixed bg-gray-900 top-0 left-0 w-full h-0 z-10 opacity-0 overflow-hidden" id="overlay">
+        <div class="overlay fixed bg-black top-0 left-0 w-full h-0 z-10 opacity-0 overflow-hidden" id="overlay">
           <nav class="overlay-menu relative text-5xl text-center">
             <ul class="list-none p-0 m-0 inline-block relative h-full">
               <li class="block relative opacity-0">
@@ -30,443 +32,1023 @@
           </nav>
         </div>
       </div>
-
-      <h1 class="text-base pt-8 pb-2">MENÚ</h1>
-
+      <h1 class="text-xl pt-8 pb-2 title">MENÚ</h1>
       <!-- Menu items -->
-      <div class="menu-wrapper relative max-w-screen-sm lg:max-w-screen-md lg:m-auto overflow-x-hidden overflow-y-hidden">
+      <div class="menu-wrapper relative max-w-screen-sm lg:max-w-screen-md m-auto overflow-x-hidden overflow-y-hidden">
         <div class="menu h-24 box-border whitespace-no-wrap overflow-x-auto overflow-y-hidden scrolling-touch flex flex-no-wrap">
-          <div id="desayunos" class="item cursor-pointer active flex bg-gray-400 rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
-            <div class="self-center w-16 text-center">
-              <img src="img/icons/breakfast.png" class="block w-8 h-auto m-auto" alt="">
-              <span class="text-xs lg:text-sm block m-auto whitespace-normal mt-2">Desayunos</span>
+          <div id="tacos" class="item cursor-pointer active flex bg-black rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
+            <div class="self-center text-center">
+              <img src="img/icons/taco_white.png" class="block w-8 h-auto m-auto" alt="">
+              <span class="text-xs text-white lg:text-sm block m-auto whitespace-normal mt-2">Tacos</span>
             </div>
           </div>
-
-          <div id="especiales" class="item cursor-pointer flex bg-gray-400 rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
-            <div class="self-center w-16 text-center">
-              <img src="img/icons/breakfast.png" class="block w-8 h-auto m-auto" alt="">
-              <span class="text-xs lg:text-sm block m-auto whitespace-normal mt-2">Especiales</span>
+          <div id="tacos_calle_4" class="item cursor-pointer flex bg-black rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
+            <div class="self-center text-center">
+              <img src="img/icons/taco_white.png" class="block w-8 h-auto m-auto" alt="">
+              <span class="text-xs text-white lg:text-sm block m-auto whitespace-normal mt-2">Calle 4</span>
             </div>
           </div>
-
-          <div id="tacos" class="item cursor-pointer flex bg-gray-400 rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
-            <div class="self-center w-16 text-center">
-              <img src="img/icons/breakfast.png" class="block w-8 h-auto m-auto" alt="">
-              <span class="text-xs lg:text-sm block m-auto whitespace-normal mt-2">Tacos</span>
+          <div id="quesadillas" class="item cursor-pointer flex bg-black rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
+            <div class="self-center text-center">
+              <img src="img/icons/taco_white.png" class="block w-8 h-auto m-auto" alt="">
+              <span class="text-xs text-white lg:text-sm block m-auto whitespace-normal mt-2">Quesadillas</span>
             </div>
           </div>
-
-          <div id="bebidas" class="item cursor-pointer flex bg-gray-400 rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
-            <div class="self-center w-16 text-center">
-              <img src="img/icons/breakfast.png" class="block w-8 h-auto m-auto" alt="">
-              <span class="text-xs lg:text-sm block m-auto whitespace-normal mt-2">Bebidas</span>
+          <div id="especiales" class="item cursor-pointer flex bg-black rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
+            <div class="self-center text-center">
+              <img src="img/icons/especial_white.png" class="block w-8 h-auto m-auto" alt="">
+              <span class="text-xs text-white lg:text-sm block m-auto whitespace-normal mt-2">Especialidades</span>
             </div>
           </div>
-
-          <div id="postres" class="item cursor-pointer flex bg-gray-400 rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
-            <div class="self-center w-16 text-center">
-              <img src="img/icons/breakfast.png" class="block w-8 h-auto m-auto" alt="">
-              <span class="text-xs lg:text-sm block m-auto whitespace-normal mt-2">Postres</span>
+          <div id="healthy" class="item cursor-pointer flex bg-black rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
+            <div class="self-center text-center">
+              <img src="img/icons/healthy_white.png" class="block w-8 h-auto m-auto" alt="">
+              <span class="text-xs text-white lg:text-sm block m-auto whitespace-normal mt-2">Healthy</span>
             </div>
           </div>
-
-          <div id="infantil" class="item cursor-pointer flex bg-gray-400 rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
-            <div class="self-center w-16 text-center">
-              <img src="img/icons/breakfast.png" class="block w-8 h-auto m-auto" alt="">
-              <span class="text-xs lg:text-sm block m-auto whitespace-normal mt-2">Infantil</span>
+          <div id="tortas" class="item cursor-pointer flex bg-black rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
+            <div class="self-center text-center">
+              <img src="img/icons/torta_white.png" class="block w-8 h-auto m-auto" alt="">
+              <span class="text-xs text-white lg:text-sm block m-auto whitespace-normal mt-2">Tortas</span>
             </div>
           </div>
-
-          <div id="cena" class="item cursor-pointer flex bg-gray-400 rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
-            <div class="self-center w-16 text-center">
-              <img src="img/icons/breakfast.png" class="block w-8 h-auto m-auto" alt="">
-              <span class="text-xs lg:text-sm block m-auto whitespace-normal mt-2">Cena</span>
+          <div id="carne_a_granel" class="item cursor-pointer flex bg-black rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
+            <div class="self-center text-center">
+              <img src="img/icons/granel_white.png" class="block w-8 h-auto m-auto" alt="">
+              <span class="text-xs text-white lg:text-sm block m-auto whitespace-normal mt-2">Carne a granel</span>
+            </div>
+          </div>
+          <div id="alambre" class="item cursor-pointer flex bg-black rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
+            <div class="self-center text-center">
+              <img src="img/icons/alambre_white.png" class="block w-8 h-auto m-auto" alt="">
+              <span class="text-xs text-white lg:text-sm block m-auto whitespace-normal mt-2">Alambre</span>
+            </div>
+          </div>
+          <div id="bebidas" class="item cursor-pointer flex bg-black rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
+            <div class="self-center text-center">
+              <img src="img/icons/bebidas_white.png" class="block w-8 h-auto m-auto" alt="">
+              <span class="text-xs text-white lg:text-sm block m-auto whitespace-normal mt-2">Bebidas</span>
+            </div>
+          </div>
+          <div id="otros" class="item cursor-pointer flex bg-black rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
+            <div class="self-center text-center">
+              <img src="img/icons/otros_white.png" class="block w-8 h-auto m-auto" alt="">
+              <span class="text-xs text-white lg:text-sm block m-auto whitespace-normal mt-2">Otros</span>
+            </div>
+          </div>
+          <div id="postres" class="item cursor-pointer flex bg-black rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
+            <div class="self-center text-center">
+              <img src="img/icons/postres_white.png" class="block w-8 h-auto m-auto" alt="">
+              <span class="text-xs text-white lg:text-sm block m-auto whitespace-normal mt-2">Postres</span>
             </div>
           </div>
         </div>
-
-        <div class="arrows outline-none">
+        <!-- <div class="arrows outline-none">
           <button class="left-arrow arrow hidden absolute top-0 bottom-0 w-8 left-0 outline-none">
             <img src="img/icons/left-arrow.png" class="outline-none" alt="">
           </button>
           <button class="right-arrow arrow absolute top-0 bottom-0 w-8 right-0 outline-none">
             <img src="img/icons/right-arrow.png" class="outline-none" alt="">
           </button>
-        </div>  
+        </div>   -->
       </div>
+      <!-- Menu items -->
     </div>
+    <!--menu list-->
     <div class="relative">
-
       <div class="mx-4 lg:w-3/6 lg:mx-auto relative">
-        <div id="menu-desayunos" class="first menu-list mt-8 overflow-auto">
+        <!---->
+
+        <div id="menu-tacos" class="first menu-list mt-8 overflow-auto">
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
+              <div class="text-sm mb-2 self-center">Tacos al pastor</div>
+              <div class="text-xs text-gray-500 mb-4">30 gr de carne cocida marinada con especies del sur</div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$14.00</span>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
+              <div class="text-sm mb-2 self-center">Tacos de longaniza</div>
+              <div class="text-xs text-gray-500 mb-4">30 gr de carne cocida marinada con especies del sur</div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
-            </div>
-          </div>
-
-          <div class="flex border-b border-gray-200 mb-4">
-            <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
-            </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$14.00</span>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
+              <div class="text-sm mb-2 self-center">Taco suadero</div>
+              <div class="text-xs text-gray-500 mb-4">30 gr de carne cocida marinada con especies del sur</div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
-            </div>
-          </div>
-
-          <div class="flex border-b border-gray-200 mb-4">
-            <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
-            </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$17.00</span>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
+              <div class="text-sm mb-2 self-center">Tacos de bistec</div>
+              <div class="text-xs text-gray-500 mb-4">30 gr de carne cocida marinada con especies del sur</div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
-            </div>
-          </div>
-
-          <div class="flex border-b border-gray-200 mb-4">
-            <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
-            </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$18.00</span>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
+              <div class="text-sm mb-2 self-center">Taco de top sirloin</div>
+              <div class="text-xs text-gray-500 mb-4">30 gr de carne cocida marinada con especies del sur</div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
-            </div>
-          </div>
-
-          <div class="flex border-b border-gray-200 mb-4">
-            <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
-            </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
-            </div>
-          </div>
-
-
-          <div class="flex border-b border-gray-200 mb-4">
-            <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
-            </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$20.00</span>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
+              <div class="text-sm mb-2 self-center">Taco arrachera</div>
+              <div class="text-xs text-gray-500 mb-4">30 gr de carne cocida marinada con especies del sur</div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$23.00</span>
+            </div>
+          </div>
+
+          <div class="flex bg-gray-900 mb-4 rounded-lg ">
+            <div class="w-full inline-block ml-4 py-3">
+              <div class="text-sm text-white text-center self-center">Tacos con queso</div>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
+              <div class="text-sm mb-2 self-center">Tacos de pastor con queso</div>
+              <div class="text-xs text-gray-500 mb-4">Taco de 30 gr. de carne cocida de tu elección y 15 gr. de queso artesanal derretido</div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
-            </div>
-          </div>
-
-
-          <div class="flex border-b border-gray-200 mb-4">
-            <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
-            </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$18.00</span>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
+              <div class="text-sm mb-2 self-center">Tacos de longaniza con queso</div>
+              <div class="text-xs text-gray-500 mb-4">Taco de 30 gr. de carne cocida de tu elección y 15 gr. de queso artesanal derretido</div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
-            </div>
-          </div>
-
-          <div class="flex border-b border-gray-200 mb-4">
-            <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
-            </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$17.00</span>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
+              <div class="text-sm mb-2 self-center">Tacos de suadero con queso</div>
+              <div class="text-xs text-gray-500 mb-4">Taco de 30 gr. de carne cocida de tu elección y 15 gr. de queso artesanal derretido</div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
-            </div>
-          </div>
-
-          <div class="flex border-b border-gray-200 mb-4">
-            <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
-            </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$20.00</span>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Strudel de manzana</div>
-              <div class="text-xs text-gray-500 mb-4">Servido con una bola de helado</div>
+              <div class="text-sm mb-2 self-center">Tacos de bistec con queso</div>
+              <div class="text-xs text-gray-500 mb-4">Taco de 30 gr. de carne cocida de tu elección y 15 gr. de queso artesanal derretido</div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$21.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Tacos de top sirloin con queso</div>
+              <div class="text-xs text-gray-500 mb-4">Taco de 30 gr. de carne cocida de tu elección y 15 gr. de queso artesanal derretido</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$23.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Tacos de arrachera con queso</div>
+              <div class="text-xs text-gray-500 mb-4">Taco de 30 gr. de carne cocida de tu elección y 15 gr. de queso artesanal derretido</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$28.00</span>
+            </div>
+          </div>
+
+          <div class="flex bg-gray-900 mb-4 rounded-lg ">
+            <div class="w-full inline-block ml-4 py-3">
+              <div class="text-sm text-white text-center self-center">Tacos de harina</div>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Tacos al pastor de harina</div>
+              <div class="text-xs text-gray-500 mb-4">45 gr. de carne cocida cortada en lajas en tortilla de harina estilo casero</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$18.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Tacos de longaniza de harina</div>
+              <div class="text-xs text-gray-500 mb-4">45 gr. de carne cocida cortada en lajas en tortilla de harina estilo casero</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$18.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Taco suadero de harina</div>
+              <div class="text-xs text-gray-500 mb-4">45 gr. de carne cocida cortada en lajas en tortilla de harina estilo casero</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$21.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Tacos de bistec de harina</div>
+              <div class="text-xs text-gray-500 mb-4">45 gr. de carne cocida cortada en lajas en tortilla de harina estilo casero</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$22.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Taco de top sirloin de harina</div>
+              <div class="text-xs text-gray-500 mb-4">45 gr. de carne cocida cortada en lajas en tortilla de harina estilo casero</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$24.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Taco arrachera de harina</div>
+              <div class="text-xs text-gray-500 mb-4">45 gr. de carne cocida cortada en lajas en tortilla de harina estilo casero</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$34.00</span>
             </div>
           </div>
         </div>
 
+        <!---->
+
+        <div id="menu-tacos_calle_4" class="menu-list mt-8 overflow-auto">
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Taco calle 4 de pastor</div>
+              <div class="text-xs text-gray-500 mb-4">Taco de 60 gr de carne cocida de tu elección y 45 gr de queso artesanal derretido</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$37.00</span>
+            </div>
+          </div>
+
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Taco calle 4 de longaniza</div>
+              <div class="text-xs text-gray-500 mb-4">Taco de 60 gr de carne cocida de tu elección y 45 gr de queso artesanal derretido</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$37.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Taco calle 4 de suadero</div>
+              <div class="text-xs text-gray-500 mb-4">Taco de 60 gr de carne cocida de tu elección y 45 gr de queso artesanal derretido</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$41.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Taco calle 4 de bistec</div>
+              <div class="text-xs text-gray-500 mb-4">Taco de 60 gr de carne cocida de tu elección y 45 gr de queso artesanal derretido</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$43.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Taco calle 4 de top sirloin </div>
+              <div class="text-xs text-gray-500 mb-4">Taco de 60 gr de carne cocida de tu elección y 45 gr de queso artesanal derretido</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$45.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Taco calle 4 de arrachera</div>
+              <div class="text-xs text-gray-500 mb-4">Taco de 60 gr de carne cocida de tu elección y 45 gr de queso artesanal derretido</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$58.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!---->
+
+        <div id="menu-quesadillas" class="menu-list mt-8 overflow-auto">
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Quesadilla de pastor</div>
+              <div class="text-xs text-gray-500 mb-4">Tortilla de harina estilo casero con 45 gr. de carne cocida a elegir y 35 gr. de queso artesanal derretido</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$28.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Quesadilla de longaniza</div>
+              <div class="text-xs text-gray-500 mb-4">Tortilla de harina estilo casero con 45 gr. de carne cocida a elegir y 35 gr. de queso artesanal derretido</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$27.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Quesadilla de suadero</div>
+              <div class="text-xs text-gray-500 mb-4">Tortilla de harina estilo casero con 45 gr. de carne cocida a elegir y 35 gr. de queso artesanal derretido</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$33.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Quesadilla de bistec</div>
+              <div class="text-xs text-gray-500 mb-4">Tortilla de harina estilo casero con 45 gr. de carne cocida a elegir y 35 gr. de queso artesanal derretido</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$34.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Quesadilla de top sirloin</div>
+              <div class="text-xs text-gray-500 mb-4">Tortilla de harina estilo casero con 45 gr. de carne cocida a elegir y 35 gr. de queso artesanal derretido</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$35.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Quesadilla de arrachera</div>
+              <div class="text-xs text-gray-500 mb-4">Tortilla de harina estilo casero con 45 gr. de carne cocida a elegir y 35 gr. de queso artesanal derretido</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$45.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Quesadilla sin carne</div>
+              <div class="text-xs text-gray-500 mb-4">Tortilla de harina estilo casero y 35 gr. de queso artesanal derretido</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$21.00</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!---->
+
+        <!---->
 
         <div id="menu-especiales" class="menu-list mt-8 overflow-auto">
+          <div class="flex bg-gray-900 mb-4 rounded-lg ">
+            <div class="w-full inline-block ml-4 py-3">
+              <div class="text-sm text-white text-center self-center">Gringas</div>
+            </div>
+          </div>
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
+              <div class="text-sm mb-2 self-center">Gringa de pastor</div>
+              <div class="text-xs text-gray-500 mb-4">Tortilla de harina casera con 65 gr. De carne cocida de tu elección y 55 gr. de queso artesanal tipo costra en toping </div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$43.00</span>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
+              <div class="text-sm mb-2 self-center">Gringa de longaniza</div>
+              <div class="text-xs text-gray-500 mb-4">Tortilla de harina casera con 65 gr. De carne cocida de tu elección y 55 gr. de queso artesanal tipo costra en toping </div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
-            </div>
-          </div>
-
-          <div class="flex border-b border-gray-200 mb-4">
-            <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
-            </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$41.00</span>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
+              <div class="text-sm mb-2 self-center">Gringa de suadero</div>
+              <div class="text-xs text-gray-500 mb-4">Tortilla de harina casera con 65 gr. De carne cocida de tu elección y 55 gr. de queso artesanal tipo costra en toping </div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
-            </div>
-          </div>
-
-          <div class="flex border-b border-gray-200 mb-4">
-            <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
-            </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$47.00</span>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
+              <div class="text-sm mb-2 self-center">Gringa de bistec</div>
+              <div class="text-xs text-gray-500 mb-4">Tortilla de harina casera con 65 gr. De carne cocida de tu elección y 55 gr. de queso artesanal tipo costra en toping </div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
-            </div>
-          </div>
-
-          <div class="flex border-b border-gray-200 mb-4">
-            <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
-            </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$49.00</span>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
+              <div class="text-sm mb-2 self-center">Gringa de top sirloin</div>
+              <div class="text-xs text-gray-500 mb-4">Tortilla de harina casera con 65 gr. De carne cocida de tu elección y 55 gr. de queso artesanal tipo costra en toping </div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
-            </div>
-          </div>
-
-          <div class="flex border-b border-gray-200 mb-4">
-            <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
-            </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
-            </div>
-          </div>
-
-
-          <div class="flex border-b border-gray-200 mb-4">
-            <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
-            </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$50.00</span>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
+              <div class="text-sm mb-2 self-center">Gringa de arrachera</div>
+              <div class="text-xs text-gray-500 mb-4">Tortilla de harina estilo casero con 45 gr. de carne cocida a elegir y 35 gr. de queso artesanal derretido</div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$66.00</span>
+            </div>
+          </div>
+
+          <div class="flex bg-gray-900 mb-4 rounded-lg ">
+            <div class="w-full inline-block ml-4 py-3">
+              <div class="text-sm text-white text-center self-center">Costras</div>
+            </div>
+          </div>
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Costra de pastor</div>
+              <div class="text-xs text-gray-500 mb-4">Tubo de 80 gr. de queso artesanal dorado por fuera y derretido por dentro, relleno de 65 gr. de carne cocida de tu elección </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$50.00</span>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
+              <div class="text-sm mb-2 self-center">Costra de longaniza</div>
+              <div class="text-xs text-gray-500 mb-4">Tubo de 80 gr. de queso artesanal dorado por fuera y derretido por dentro, relleno de 65 gr. de carne cocida de tu elección </div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
-            </div>
-          </div>
-
-
-          <div class="flex border-b border-gray-200 mb-4">
-            <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
-            </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$49.00</span>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
+              <div class="text-sm mb-2 self-center">Costra de suadero</div>
+              <div class="text-xs text-gray-500 mb-4">Tubo de 80 gr. de queso artesanal dorado por fuera y derretido por dentro, relleno de 65 gr. de carne cocida de tu elección </div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
-            </div>
-          </div>
-
-          <div class="flex border-b border-gray-200 mb-4">
-            <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
-            </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$55.00</span>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
+              <div class="text-sm mb-2 self-center">Costra de bistec</div>
+              <div class="text-xs text-gray-500 mb-4">Tubo de 80 gr. de queso artesanal dorado por fuera y derretido por dentro, relleno de 65 gr. de carne cocida de tu elección </div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
-            </div>
-          </div>
-
-          <div class="flex border-b border-gray-200 mb-4">
-            <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
-            </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$56.00</span>
             </div>
           </div>
 
           <div class="flex border-b border-gray-200 mb-4">
             <div class="w-4/5 inline-block ml-4">
-              <div class="text-sm mb-2 self-center">Cheesecake</div>
-              <div class="text-xs text-gray-500 mb-4">Con fresas frescas</div>
+              <div class="text-sm mb-2 self-center">Costra de top sirloin</div>
+              <div class="text-xs text-gray-500 mb-4">Tubo de 80 gr. de queso artesanal dorado por fuera y derretido por dentro, relleno de 65 gr. de carne cocida de tu elección </div>
             </div>
-            <div class="w-1/5 inline-block mr-4 self-center">
-              <span class="text-sm text-right block pb-2 mr-1">$75.00</span>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$60.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Costra combinada</div>
+              <div class="text-xs text-gray-500 mb-4">Tubo de 80 gr. de queso artesanal dorado por fuera y derretido por dentro, relleno de 65 gr. de carne cocida de tu elección </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$67.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Costra de arrachera</div>
+              <div class="text-xs text-gray-500 mb-4">Tubo de 80 gr. de queso artesanal dorado por fuera y derretido por dentro, relleno de 65 gr. de carne cocida de tu elección </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$77.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Costra fifí</div>
+              <div class="text-xs text-gray-500 mb-4">Tubo de 100 gr. de queso artesanal (o vegano) dorado por fuera y derretido por dentro, relleno de 80 gr. de carne de arrachera y top sirloin, aguacate en topping, espolvoreado con queso de cabra y frutos azules, sobre 3 tortillas azules nixtamalizadas libres de gluten</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$137.00</span>
             </div>
           </div>
         </div>
+        
+        <!---->
+
+        <!---->
+
+        <div id="menu-healthy" class="menu-list mt-8 overflow-auto">
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Costra vegana</div>
+              <div class="text-xs text-gray-500 mb-4">Tubo de 100 gr. de queso vegano libre de gluten, dorado por fuera y derretido por dentro, relleno de calabazas, champiñones, marinados con receta estilo del sureste, aguacate en topping, todo sobre 3 tortillas azules nixtamalizadas libre de gluten</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$60.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Taco vegano</div>
+              <div class="text-xs text-gray-500 mb-4">Espinacas y champiñones asados con el marinado de la casa, en tortillas azules nixtamalizadas sin gluten</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$16.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Sopecitos de pollo al pastor</div>
+              <div class="text-xs text-gray-500 mb-4">Sopecitos de maíz nixtamalizada con nopal libre de gluten, frijoles refritos, pollo marinado al pastor, queso (vegano o asadero) piña y aguacate en topping. (Órden de 4)</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$65.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Sopecitos veganos</div>
+              <div class="text-xs text-gray-500 mb-4">Sopecitos de maíz nixtamalizada con nopal libre de gluten, frijoles refritos, champiñones, espinaca con marinado de la casa, queso vegano y aguacate en topping. (Órden de 4)</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$64.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!---->
+
+        <!---->
+
+        <div id="menu-tortas" class="menu-list mt-8 overflow-auto">
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Torta de pastor</div>
+              <div class="text-xs text-gray-500 mb-4">75 gr. de carne cocida de tu preferencia, con 60 gr. de queso artesanal derretido, en un rico pan relleno de frijoles, mayonesa y rebanadas de aguacate </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$60.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Torta de longaniza</div>
+              <div class="text-xs text-gray-500 mb-4">75 gr. de carne cocida de tu preferencia, con 60 gr. de queso artesanal derretido, en un rico pan relleno de frijoles, mayonesa y rebanadas de aguacate </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$59.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Torta de suadero</div>
+              <div class="text-xs text-gray-500 mb-4">75 gr. de carne cocida de tu preferencia, con 60 gr. de queso artesanal derretido, en un rico pan relleno de frijoles, mayonesa y rebanadas de aguacate</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$66.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Torta de bistec</div>
+              <div class="text-xs text-gray-500 mb-4">75 gr. de carne cocida de tu preferencia, con 60 gr. de queso artesanal derretido, en un rico pan relleno de frijoles, mayonesa y rebanadas de aguacate</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$68.00</span>
+            </div>
+          </div>
+        
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Torta de top sirloin</div>
+              <div class="text-xs text-gray-500 mb-4">75 gr. de carne cocida de tu preferencia, con 60 gr. de queso artesanal derretido, en un rico pan relleno de frijoles, mayonesa y rebanadas de aguacate</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$71.00</span>
+            </div>
+          </div>
+      
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Torta de arrachera</div>
+              <div class="text-xs text-gray-500 mb-4">75 gr. de carne cocida de tu preferencia, con 60 gr. de queso artesanal derretido, en un rico pan relleno de frijoles, mayonesa y rebanadas de aguacate</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$87.00</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!---->
+
+        <!---->
+
+        <div id="menu-carne_a_granel" class="menu-list mt-8 overflow-auto">
+          <div class="flex bg-gray-900 mb-4 rounded-lg ">
+            <div class="w-full inline-block ml-4 py-3">
+              <div class="text-sm text-white text-center self-center">Kilo (33 tacos aprox.)</div>
+            </div>
+          </div>
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">De pastor</div>
+              <div class="text-xs text-gray-500 mb-4">Kilogramo de carne cocida de tu elección, incluye tortillas (1 kg), salsas, verduras, limones (con 200 gramos de queso artesanal $70 extra)</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$330.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">De longaniza</div>
+              <div class="text-xs text-gray-500 mb-4">Kilogramo de carne cocida de tu elección, incluye tortillas (1 kg), salsas, verduras, limones (con 200 gramos de queso artesanal $70 extra)</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$300.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">De suadero</div>
+              <div class="text-xs text-gray-500 mb-4">Kilogramo de carne cocida de tu elección, incluye tortillas (1 kg), salsas, verduras, limones (con 200 gramos de queso artesanal $70 extra)</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$365.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">De bistec</div>
+              <div class="text-xs text-gray-500 mb-4">Kilogramo de carne cocida de tu elección, incluye tortillas (1 kg), salsas, verduras, limones (con 200 gramos de queso artesanal $70 extra)</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$429.00</span>
+            </div>
+          </div>
+        
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">De top sirloin</div>
+              <div class="text-xs text-gray-500 mb-4">Kilogramo de carne cocida de tu elección, incluye tortillas (1 kg), salsas, verduras, limones (con 200 gramos de queso artesanal $70 extra)</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$439.00</span>
+            </div>
+          </div>
+      
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">De arrachera</div>
+              <div class="text-xs text-gray-500 mb-4">Kilogramo de carne cocida de tu elección, incluye tortillas (1 kg), salsas, verduras, limones (con 200 gramos de queso artesanal $70 extra)</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$650.00</span>
+            </div>
+          </div>
+
+          <div class="flex bg-gray-900 mb-4 rounded-lg ">
+            <div class="w-full inline-block ml-4 py-3">
+              <div class="text-sm text-white text-center self-center">Medio kilo (16 tacos aprox.)</div>
+            </div>
+          </div>
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">De pastor</div>
+              <div class="text-xs text-gray-500 mb-4">Medio kilogramo de carne cocida de tu elección acompañada de salsas, verdura, limones y medio kilogramo de tortillas (con 100 gr. de queso $40 extra)</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$179.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">De longaniza</div>
+              <div class="text-xs text-gray-500 mb-4">Medio kilogramo de carne cocida de tu elección acompañada de salsas, verdura, limones y medio kilogramo de tortillas (con 100 gr. de queso $40 extra)</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$169.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">De suadero</div>
+              <div class="text-xs text-gray-500 mb-4">Medio kilogramo de carne cocida de tu elección acompañada de salsas, verdura, limones y medio kilogramo de tortillas (con 100 gr. de queso $40 extra)</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$195.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">De bistec</div>
+              <div class="text-xs text-gray-500 mb-4">Medio kilogramo de carne cocida de tu elección acompañada de salsas, verdura, limones y medio kilogramo de tortillas (con 100 gr. de queso $40 extra)</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$219.00</span>
+            </div>
+          </div>
+      
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">De arrachera</div>
+              <div class="text-xs text-gray-500 mb-4">Medio kilogramo de carne cocida de tu elección acompañada de salsas, verdura, limones y medio kilogramo de tortillas (con 100 gr. de queso $40 extra)</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$355.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!---->
+
+        <!---->
+
+        <div id="menu-alambre" class="menu-list mt-8 overflow-auto">
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Callejón</div>
+              <div class="text-xs text-gray-500 mb-4">Carnes cocidas de: 200 gr. de pastor, 125 gr. de bistec, 30 gr. tocino, 30 gr. jamón, 75 gr. de longaniza, pimiento morrón, todo envuelto en 200 gr. de queso artesanal derretido</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$230.00</span>
+            </div>
+          </div>
+          
+        </div>
+
+        <!---->
+
+        <!---->
+
+        <div id="menu-bebidas" class="menu-list mt-8 overflow-auto">
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Refresco</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$18.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Agua jamaica</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$18.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Agua horchata</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$18.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Café de olla</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$18.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Negra modelo</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$28.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Corona</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$26.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Coronita</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$21.00</span>
+            </div>
+          </div>
+          
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Perrier</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$40.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Agua natural</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$15.00</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!---->
+      
+        <!---->
+
+        <div id="menu-otros" class="menu-list mt-8 overflow-auto">
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Frijoles charros</div>
+              <div class="text-xs text-gray-500 mb-4">
+                Con chicharrón, longaniza y queso
+              </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$25.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Cebolla preparada</div>
+              <div class="text-xs text-gray-500 mb-4">Marinada con especias de la casa</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$25.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Guacamole</div>
+              <div class="text-xs text-gray-500 mb-4">Aguacate con cebolla cilantro y chiles serrano</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$40.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Órden de aguacate</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$33.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Chicharrón de queso 75 gr.</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$35.00</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!---->
+
+        <!---->
+
+        <div id="menu-postres" class="menu-list mt-8 overflow-auto">
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Helado frito</div>
+              <div class="text-xs text-gray-500 mb-4">Bola de helado de vainilla capeado con cereza y chocolate líquido en toppingCon chicharrón, longaniza y queso</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$39.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Flan de queso</div>
+              <div class="text-xs text-gray-500 mb-4">100% casero 150 gr.</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$33.00</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!---->
 
         <div class="arrows outline-none">
           <button class="up-arrow arrow absolute bottom-0 w-8 right-0 outline-none">
@@ -477,16 +1059,15 @@
           </button>
         </div>
       </div>
-
-      
-
     </div>
+    <!--menu list-->
   </main>
-  <footer class="flex bg-gray-300 text-gray-900 text-xs text-center py-3 absolute left-0 bottom-0 w-full h-8">
-    <span class="block mx-auto self-center">Desarrollado por © <a href="https://www.hornitodigital.com/" target="_blank" ><span class="underline">Hornito Digital</span></a></span>
+  <footer class="flex bg-black text-gray-900 text-xs text-center py-3 absolute left-0 bottom-0 w-full h-8">
+    <span class="text-white block mx-auto self-center">Desarrollado por © <a href="https://www.hornitodigital.com/" target="_blank" ><span class="underline">Hornito Digital</span></a></span>
   </footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/horizontal-scroll.js"></script>
 <script src="js/vertical-scroll.js"></script>
 <script src="js/main.js"></script>

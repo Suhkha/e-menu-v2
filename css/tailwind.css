@@ -2,8 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, burguer {
+html, body{
   outline: none !important;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*inicio*/
+.title {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.bg {
+  position: relative;
+}
+.bg-cover {
+  z-index: -999;
+  height: 100%;
+  margin-top: -50px;
+}
+
+.overlay-cover {
+  z-index: -998;
+  height: 100%;
+  margin-top: -50px;
+}
+
+.overlay-text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#gallery img {
+  filter: grayscale(100%);
 }
 
 .wrapper-item {
@@ -12,56 +46,30 @@ html, body, burguer {
 }
 
 .active {
-  border: solid 2px;
+  border: solid 2px #ac1214;
+  background-color: #ac1214;
 }
 
+.view-menu-btn > #view-menu:hover  {
+  background-color: #ac1214;
+}
 
 /*menu*/
 .burguer_container {
   transition: opacity .25s ease;
 }
 
-/* .burguer_container.active-burguer .top {
-  transform: translateY(11px) translateX(0) rotate(45deg);
-  background: #FFF;
-}
-.burguer_container.active-burguer .middle {
-  opacity: 0;
-  background: #FFF;
-}
-.burguer_container.active-burguer .bottom {
-  -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
-          transform: translateY(-11px) translateX(0) rotate(-45deg);
-  background: #FFF;
-} */
-/* .burguer_container span {
-  background: #FF5252;
-  border: none;
-  height: 5px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transition: all .35s ease;
-  transition: all .35s ease;
-  cursor: pointer;
-}
-.burguer_container span:nth-of-type(2) {
-  top: 11px;
-}
-.burguer_container span:nth-of-type(3) {
-  top: 22px;
-} */
-
 .overlay {
   visibility: hidden;
   transition: opacity .35s, visibility .35s, height .35s;
 }
+
 .overlay.open {
   opacity: .9;
   visibility: visible;
   height: 100%;
 }
+
 .overlay.open li {
   animation: fadeInRight .5s ease forwards;
   animation-delay: .35s;
@@ -76,6 +84,7 @@ html, body, burguer {
 }
 
 .overlay nav {
+  font-family: 'Bebas Neue', cursive;
   height: 70%;
   top: 50%;
   transform: translateY(-50%);
@@ -90,6 +99,7 @@ html, body, burguer {
 .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
   width: 100%;
 }
+
 .overlay ul li a:after {
   content: '';
   position: absolute;
