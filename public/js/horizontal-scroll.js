@@ -2,6 +2,7 @@ $('.menu').slick({
   prevArrow:"<img src='img/icons/left-arrow.png' class='w-8 h-8 self-center outline-none'>",
   nextArrow:"<img src='img/icons/right-arrow.png' class='w-8 h-8 self-center outline-none'>",
   dots: false,
+  arrows: true,
   infinite: false,
   speed: 300,
   slidesToShow: 3,
