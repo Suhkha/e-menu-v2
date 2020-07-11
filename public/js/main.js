@@ -25,7 +25,7 @@ $(document).ready(function () {
     if (!$(this).hasClass('active-burguer')) {
       $('.burguer-icon').attr('src', 'img/icons/close.png');
     }else{
-      $('.burguer-icon').attr('src', 'img/icons/menu_white.png');
+      $('.burguer-icon').attr('src', 'img/icons/menu_dark.png');
     }
     $(this).toggleClass('fixed');
     $(this).toggleClass('active-burguer');

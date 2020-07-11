@@ -1,23 +1,23 @@
-const staticDevCoffee = "taqueria-calle-4"
+const staticCalle4 = "calle-4-taqueria"
 const assets = [
   "/",
   "index.html",
-  "menu.html",
-  "galeria.html",
-  "css/main.css",
-  "css/slick.css",
-  "css/jquery.fancybox.min.css",
-  "js/horizontal-scroll.js",
-  "js/jquery.fancybox.min.js",
-  "js/slick.min.js",
-  "js/main.js",
-  "js/vertical-scroll.js",
-  "img/*"
+  "/menu.html",
+  "/galeria.html",
+  "/css/main.css",
+  "/css/slick.css",
+  "/css/jquery.fancybox.min.css",
+  "/js/horizontal-scroll.js",
+  "/js/jquery.fancybox.min.js",
+  "/js/slick.min.js",
+  "/js/main.js",
+  "/js/vertical-scroll.js",
+  "/img/*"
 ];
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
-    caches.open(staticDevCoffee).then(cache => {
+    caches.open(staticCalle4).then(cache => {
       cache.addAll(assets);
     })
   );
