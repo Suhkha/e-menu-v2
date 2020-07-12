@@ -1,3 +1,132 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body{
+  outline: none !important;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*inicio*/
+.title {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.bg {
+  position: relative;
+}
+.bg-cover {
+  z-index: -999;
+  height: 100%;
+  margin-top: -50px;
+}
+
+.overlay-cover {
+  z-index: -998;
+  height: 100%;
+  margin-top: -50px;
+}
+
+.overlay-text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper-item {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.active {
+  border: solid 2px #0b0f02;
+  background-color: #0b0f02;
+}
+
+
+/*menu*/
+.burguer_container {
+  transition: opacity .25s ease;
+}
+
+.overlay {
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+}
+
+.overlay.open {
+  opacity: .9;
+  visibility: visible;
+  height: 100%;
+}
+
+.overlay.open li {
+  animation: fadeInRight .5s ease forwards;
+  animation-delay: .35s;
+}
+
+.overlay.open li:nth-of-type(2) {
+  animation-delay: .4s;
+}
+
+.overlay.open li:nth-of-type(3) {
+  animation-delay: .45s;
+}
+
+.overlay nav {
+  font-family: 'Bebas Neue', cursive;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.overlay ul li {
+  height: 25%;
+  height: calc(100% / 4);
+  min-height: 50px;
+}
+
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+}
+
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  transition: .35s;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.slick-disabled {
+  display: none !important;
+}

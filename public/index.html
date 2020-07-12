@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="relative">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json" />
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="img/icons/icon-72x72.png" />
+  <link rel="apple-touch-icon" href="img/icons/icon-96x96.png" />
+  <link rel="apple-touch-icon" href="img/icons/icon-144x144.png" />
+  <link rel="apple-touch-icon" href="img/icons/icon-152x152.png" />
+  <link rel="apple-touch-icon" href="img/icons/icon-192x192.png" />
+  <meta name="apple-mobile-web-app-status-bar" content="#000000" />
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="cache-control" content="no-store" />
+  <meta http-equiv="expires" content="-1" />
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+  <meta http-equiv="pragma" content="no-cache" />
+
+  <meta property="og:title" content="Calle 4 Taquería" />
+  <meta property="og:url" content="https://callecuatrotaqueria.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://callecuatrotaqueria.com/img/share.png" />
+  <meta property="og:title" content="Hornito Digital | e-menu" />
+  <meta property="og:url" content="https://e-menu.netlify.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://cdn.glitch.com/245ab1e8-98b5-4d6d-ae3d-8ea737a78007%2Fshare-e-menu.png?v=1590598313537" />
+  <meta property="og:description" content="Creamos tus menús digitales. Tocar un menú es cosa del pasado." />
+
+  <title>Hornito Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167813718-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167813718-1');
+  </script>
+
+</head>
+<body>
+  
+  <main>
+    <div class="bg">
+
+      <img src="img/cover.png" class="absolute w-full h-64 top-0 object-cover bg-cover" alt="">  
+      <div class="overlay-cover absolute w-full bg-black opacity-50 top-0"></div>
+
+      <div id="header" class="mx-4 lg:m-auto lg:w-3/6 relative">
+          <div id="header-menu" class="my-4">
+            <div class="burguer_container cursor-pointer z-50 hover:opacity-75" id="toggle">
+              <img src="img/icons/menu_white.png" class="burguer-icon block w-6 h-auto" alt="">
+            </div>
+            <div class="overlay fixed bg-black top-0 left-0 w-full h-0 z-10 opacity-0 overflow-hidden" id="overlay">
+              <nav class="overlay-menu relative text-5xl text-center">
+                <ul class="list-none p-0 m-0 inline-block relative h-full">
+                  <li class="block relative opacity-0">
+                    <a class="block relative text-white no-underline overflow-hidden" href="/">Inicio</a>
+                  </li>
+                  <li class="block relative opacity-0">
+                    <a class="block relative text-white no-underline overflow-hidden" href="/menu">Menú</a>
+                  </li>
+                  <li class="block relative opacity-0">
+                    <a class="block relative text-white no-underline overflow-hidden" href="/galeria">Galería</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+      </div>
+      <div class="bg-white w-3/4 mx-auto lg:w-2/5 lg:m-auto mt-4 rounded-lg relative">
+        <img src="img/logo.png" class="w-2/5 lg:w-1/2 m-auto" alt="">
+      </div>
+
+      <div id="information" class="w-3/5 lg:w-1/5 mt-4 mx-auto relative">
+        <div class="hours flex mb-2">
+          <div class="inline-block self-center">
+            <img src="img/icons/clock_white.png" class="block w-5 lg:w-6 h-auto m-auto" alt="">
+          </div>
+          <div class="inline-block self-center">
+            <span class="text-xs lg:text-base block ml-2 text-white">L a D de 09:00 a 20:00 hrs</span>
+          </div>
+        </div>
+        <div class="phone flex mb-2">
+          <div class="inline-block self-center">
+            <img src="img/icons/phone_white.png" class="block w-5 lg:w-6 h-auto m-auto" alt="">
+          </div>
+          <div class="inline-block self-center">
+            <a href="#" class="text-xs lg:text-base block ml-2 text-white">
+              00 0000 0000
+            </a>
+            <a href="#" class="text-xs lg:text-base block ml-2 text-white">
+              00 0000 0000
+            </a>
+          </div>
+        </div>
+
+        <a href="/menu" class="view-menu-btn">
+          <div id="view-menu" class="rounded-lg bg-olive mt-6 py-4 px-6 flex flex-row justify-around hover:bg-black">
+            <div class="self-center">
+              <span class="text-base lg:text-xl text-white">Ver menú</span>
+            </div>
+            <div>
+              <img src="img/icons/menu-letter_white.png" class="block w-6 lg:w-8 h-auto m-auto" alt="">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div id="gallery" class="w-4/5 lg:w-2/5 mx-auto mt-4 mb-12 relative grayscale ">
+        <a href="/galeria" class="cursor-pointer">
+          <img src="img/gallery.png" class="rounded-lg block w-full h-32 lg:h-56 object-cover" alt="">
+        </a>
+        <a href="/galeria" class="block float-right mt-2">Ver galería <img src="img/icons/arrow.png" class="inline w-3 h-auto m-auto" alt=""></a>
+      </div>
+    </div>
+
+    <div id="address" class="w-4/5 lg:w-2/5 mx-auto mb-8">
+      <div class="flex mb-2">
+        <div class="inline-block self-center">
+          <img src="img/icons/placeholder.png" class="block w-8 h-auto m-auto" alt="">
+        </div>
+        <a href="https://goo.gl/maps/5Spt2jKtrazjc4D77" target="_blank" class="cursor-pointer">
+          <div class="inline-block">
+            <span class="text-sm lg:text-base block ml-2">Centro Histórico de la Cdad. de México, Centro, Ciudad de México, CDMX.</span>
+          </div>
+        </a>
+      </div>
+      <a href="https://goo.gl/maps/5Spt2jKtrazjc4D77" target="_blank" class="cursor-pointer block relative">
+        <img src="img/map.png" class="rounded-lg" alt="">
+        <span class="absolute overlay-text text-white z-10">Ver mapa</span>
+        <div class="overlay-map absolute w-full h-full bg-black opacity-50 top-0 rounded-lg"></div>
+      </a>
+    </div>
+
+    <div id="follow" class="w-3/4 lg:w-1/5 mt-4 mx-auto myt-10 mb-16">
+      <span class="text-base">¡Síguenos también en nuestras redes!</span>
+      <div class="flex flex-row justify-around mt-4">
+        <div class="inline-block">
+          <a href="https://www.facebook.com/hornitodigital/" target="_blank" class="cursor-pointer">
+            <img src="img/icons/facebook.png" class="block w-10 h-auto m-auto" alt="">
+          </a>
+        </div>
+      </div>  
+    </div>
+  </main>
+  <footer class="flex bg-olive text-white text-xs text-center py-3 absolute left-0 bottom-0 w-full h-8">
+    <span class="text-white block mx-auto self-center">Desarrollado por © <a href="https://www.hornitodigital.com/" target="_blank" ><span class="underline">Hornito Digital</span></a></span>
+  </footer> 
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</html>

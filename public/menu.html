@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json" />
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="img/icons/icon-72x72.png" />
+  <link rel="apple-touch-icon" href="img/icons/icon-96x96.png" />
+  <link rel="apple-touch-icon" href="img/icons/icon-144x144.png" />
+  <link rel="apple-touch-icon" href="img/icons/icon-152x152.png" />
+  <link rel="apple-touch-icon" href="img/icons/icon-192x192.png" />
+  <meta name="apple-mobile-web-app-status-bar" content="#000000" />
+  <meta name="theme-color" content="#000000" />
+  <meta http-equiv="cache-control" content="no-store" />
+  <meta http-equiv="expires" content="-1" />
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+  <meta http-equiv="pragma" content="no-cache" />
+
+  <meta property="og:title" content="Hornito Digital | e-menu" />
+  <meta property="og:url" content="https://e-menu.netlify.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://cdn.glitch.com/245ab1e8-98b5-4d6d-ae3d-8ea737a78007%2Fshare-e-menu.png?v=1590598313537" />
+  <meta property="og:description" content="Creamos tus menús digitales. Tocar un menú es cosa del pasado." />
+
+  <title>Hornito Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167813718-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167813718-1');
+  </script>
+
+</head>
+<body>
+  <main>
+    
+    <div id="header" class="mx-4 lg:m-auto lg:w-3/6">
+      <div id="header-menu" class="my-4">
+        <div class="burguer_container fixed cursor-pointer z-50 hover:opacity-75" id="toggle-menu">
+          <img src="img/icons/menu_dark.png" class="burguer-icon block w-6 h-auto" alt="">
+        </div>
+        <div class="overlay fixed bg-black top-0 left-0 w-full h-0 z-10 opacity-0 overflow-hidden" id="overlay">
+          <nav class="overlay-menu relative text-5xl text-center">
+            <ul class="list-none p-0 m-0 inline-block relative h-full">
+              <li class="block relative opacity-0">
+                <a class="block relative text-white no-underline overflow-hidden" href="/">Inicio</a>
+              </li>
+              <li class="block relative opacity-0">
+                <a class="block relative text-white no-underline overflow-hidden" href="/menu">Menú</a>
+              </li>
+              <li class="block relative opacity-0">
+                <a class="block relative text-white no-underline overflow-hidden" href="/galeria">Galería</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <h1 class="text-base pt-8 pb-2">MENÚ</h1>
+      <!-- Menu items -->
+      <div class="menu-wrapper relative max-w-screen-sm lg:max-w-screen-md m-auto overflow-x-hidden overflow-y-hidden">
+        <div class="menu h-24 box-border whitespace-no-wrap overflow-x-auto overflow-y-hidden scrolling-touch flex flex-no-wrap">
+          <div id="entradas" class="item cursor-pointer active flex bg-olive rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
+            <div class="self-center text-center">
+              <img src="img/icons/entradas_white.png" class="block w-8 h-auto m-auto" alt="">
+              <span class="text-xs text-white lg:text-sm block m-auto whitespace-normal mt-2">Entradas</span>
+            </div>
+          </div>
+          <div id="pizzas" class="item cursor-pointer flex bg-olive rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
+            <div class="self-center text-center">
+              <img src="img/icons/pizza_white.png" class="block w-8 h-auto m-auto" alt="">
+              <span class="text-xs text-white lg:text-sm block m-auto whitespace-normal mt-2">Pizzas</span>
+            </div>
+          </div>
+          <div id="pastas" class="item cursor-pointer flex bg-olive rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
+            <div class="self-center text-center">
+              <img src="img/icons/pasta_white.png" class="block w-8 h-auto m-auto" alt="">
+              <span class="text-xs text-white lg:text-sm block m-auto whitespace-normal mt-2">Pastas</span>
+            </div>
+          </div>
+          <div id="ensaladas" class="item cursor-pointer flex bg-olive rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
+            <div class="self-center text-center">
+              <img src="img/icons/ensaladas_white.png" class="block w-8 h-auto m-auto" alt="">
+              <span class="text-xs text-white lg:text-sm block m-auto whitespace-normal mt-2">Ensaladas</span>
+            </div>
+          </div>
+          <div id="postres" class="item cursor-pointer flex bg-olive rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
+            <div class="self-center text-center">
+              <img src="img/icons/postres_white.png" class="block w-8 h-auto m-auto" alt="">
+              <span class="text-xs text-white lg:text-sm block m-auto whitespace-normal mt-2">Postres</span>
+            </div>
+          </div>
+          <div id="bebidas" class="item cursor-pointer flex bg-olive rounded-lg mx-1 p-4 box-border border-2 border-transparent relative">
+            <div class="self-center text-center">
+              <img src="img/icons/bebidas_white.png" class="block w-8 h-auto m-auto" alt="">
+              <span class="text-xs text-white lg:text-sm block m-auto whitespace-normal mt-2">Bebidas</span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!-- Menu items -->
+    </div>
+    <!--menu list-->
+    <div class="relative">
+      <div class="mx-4 lg:w-3/6 lg:mx-auto relative">
+        <!---->
+
+        <div id="menu-entradas" class="first menu-list mt-8 overflow-auto">
+          <div class="flex border-olive border-2 mb-4 rounded-lg ">
+            <div class="w-3/4 m-auto inline-block py-3">
+              <div class="text-sm text-center self-center">
+                Deleita tu paladar con nuestras entradas, perfectas para compartir
+              </div>
+            </div>
+          </div>
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Alcachofa a la parrilla</div>
+              <div class="text-xs text-gray-500 mb-4">
+                Sal de mar, trufa, queso grana padano, alioli de limón.
+              </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$20.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Bruschetta de prosciutto</div>
+              <div class="text-xs text-gray-500 mb-4">
+                Queso crescenza, espárragos a la parrilla, trufa, grana padano
+              </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$30.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Sopa del día</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$17.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Pan de ajo de trufa blanca</div>
+              <div class="text-xs text-gray-500 mb-4">
+                Ricotta casera, mozzarella, grana padano, hierbas
+              </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$15.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Pan a la parrilla y aceite de Oliva</div>
+              <div class="text-xs text-gray-500 mb-4">
+                Grana padano y hierbas
+              </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$20.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!---->
+
+        <div id="menu-pizzas" class="menu-list mt-8 overflow-auto">
+          <div class="flex border-olive border-2 mb-4 rounded-lg ">
+            <div class="w-3/4 m-auto inline-block py-3">
+              <div class="text-sm text-center self-center">
+                Sustituto de la corteza sin gluten + $25 (agrega 20-60 cal)
+              </div>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Pizza margarita</div>
+              <div class="text-xs text-gray-500 mb-4">
+                Mozzarella, albahaca fresca, aceite de oliva, salsa roja
+              </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$135.00</span>
+            </div>
+          </div>
+
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Pizza del chef</div>
+              <div class="text-xs text-gray-500 mb-4">
+                A elección del chef
+              </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$150.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Pizza de hongos</div>
+              <div class="text-xs text-gray-500 mb-4">
+                Champiñones asados, cebolla cipollini, mozzarella ahumada
+              </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$150.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Pizza de carne</div>
+              <div class="text-xs text-gray-500 mb-4">
+                Pepperoni picante, soppressata, salchicha italiana
+              </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$160.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!---->
+
+        <div id="menu-pastas" class="menu-list mt-8 overflow-auto">
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Pasta a la boloñesa</div>
+              <div class="text-xs text-gray-500 mb-4">
+                (Especialidad de la casa) - salsa de carne tradicional, tallarines y queso grana padano
+              </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$130.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Chicken pesto</div>
+              <div class="text-xs text-gray-500 mb-4">
+                Pasta gigli, piñones tostados, ajo, albahaca, alcaparras crujientes
+              </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$140.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Burrata tortelloni</div>
+              <div class="text-xs text-gray-500 mb-4">
+                Tomate cherry, albahaca, queso pecorino, salsa rústica de tomate
+              </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$130.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!---->
+
+        <!---->
+
+        <div id="menu-ensaladas" class="menu-list mt-8 overflow-auto">
+          <div class="flex bg-olive mb-4 rounded-lg ">
+            <div class="w-full inline-block ml-4 py-3">
+              <div class="text-sm text-white text-center self-center">Chicas</div>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Ensalada Cesar</div>
+              <div class="text-xs text-gray-500 mb-4">
+                Corazones romanos, radicchio afeitado, grana padano, crutón clásico
+              </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$60.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Arúgula y aguacate</div>
+              <div class="text-xs text-gray-500 mb-4">
+                Limón, aceite de oliva virgen extra, grana padano
+              </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$65.00</span>
+            </div>
+          </div>
+
+          <div class="flex bg-olive mb-4 rounded-lg ">
+            <div class="w-full inline-block ml-4 py-3">
+              <div class="text-sm text-white text-center self-center">Medianas</div>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Ensalada de vegetales</div>
+              <div class="text-xs text-gray-500 mb-4">
+                Calabaza moscada, coles de Bruselas, coliflor, col rizada, achicoria, queso de cabraa, espelta, pistacho, dátiles, vinagreta balsámica blanca
+              </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$120.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Ensalada italiana</div>
+              <div class="text-xs text-gray-500 mb-4">
+                salami, provolone, pepperoncini, aceitunas, tomate campari, cebolla roja, pepino, pimiento asado, vinagreta de orégano
+              </div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$130.00</span>
+            </div>
+          </div>
+        </div>
+        
+        <!---->
+        <!---->
+
+        <div id="menu-postres" class="menu-list mt-8 overflow-auto">
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Bombolini</div>
+              <div class="text-xs text-gray-500 mb-4">(Rosquillas italianas) cuajada de limón meyer, mascarpone de vainilla)</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$39.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Affogato</div>
+              <div class="text-xs text-gray-500 mb-4">Helado de vainilla, espresso</div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$33.00</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!---->
+        <!---->
+
+        <div id="menu-bebidas" class="menu-list mt-8 overflow-auto">
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Refresco</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$18.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Agua del día</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$18.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Café de olla</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$18.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Cerveza</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$28.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Copa de vino</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$26.00</span>
+            </div>
+          </div>
+          
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Agua mineral</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$20.00</span>
+            </div>
+          </div>
+
+          <div class="flex border-b border-gray-200 mb-4">
+            <div class="w-4/5 inline-block ml-4">
+              <div class="text-sm mb-2 self-center">Agua natural</div>
+              <div class="text-xs text-gray-500 mb-4"></div>
+            </div>
+            <div class="w-1/5 inline-block mr-4 ml-2 self-center">
+              <span class="text-sm text-right block pb-2 mr-1">$15.00</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!---->
+ 
+
+
+
+        <div class="arrows outline-none">
+          <button class="up-arrow arrow absolute bottom-0 w-8 right-0 outline-none">
+            <img src="img/icons/up-arrow.png" class="outline-none" alt="">
+          </button>
+          <button class="down-arrow arrow absolute bottom-0 w-8 right-0 outline-none">
+            <img src="img/icons/down-arrow.png" class="outline-none" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--menu list-->
+  </main>
+  <footer class="flex bg-olive text-white text-xs text-center py-3 absolute left-0 bottom-0 w-full h-8">
+    <span class="text-white block mx-auto self-center">Desarrollado por © <a href="https://www.hornitodigital.com/" target="_blank" ><span class="underline">Hornito Digital</span></a></span>
+  </footer>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/horizontal-scroll.js"></script>
+<script src="js/vertical-scroll.js"></script>
+<script src="js/main.js"></script>
+</html>
