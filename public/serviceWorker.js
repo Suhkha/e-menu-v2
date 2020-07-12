@@ -1,4 +1,4 @@
-const staticCalle4 = "calle-4-taqueria"
+const staticHornito = "hornito-digital"
 const assets = [
   "/",
   "index.html",
@@ -17,7 +17,7 @@ const assets = [
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
-    caches.open(staticCalle4).then(cache => {
+    caches.open(staticHornito).then(cache => {
       cache.addAll(assets);
     })
   );
