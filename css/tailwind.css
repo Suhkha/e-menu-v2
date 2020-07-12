@@ -42,13 +42,10 @@ body {
 }
 
 .active {
-  border: solid 2px #ac1214;
-  background-color: #ac1214;
+  border: solid 2px #0b0f02;
+  background-color: #0b0f02;
 }
 
-.view-menu-btn > #view-menu:hover  {
-  background-color: #ac1214;
-}
 
 /*menu*/
 .burguer_container {
