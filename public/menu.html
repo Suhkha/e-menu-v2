@@ -38,31 +38,33 @@
   </script>
 
 </head>
-<body>
+<body class="lg:relative lg:pb-4 lg:m-0 lg:min-h-full">
   <main>
-    
-    <div id="header" class="mx-4 lg:m-auto lg:w-3/6">
-      <div id="header-menu" class="my-4">
-        <div class="burguer_container fixed cursor-pointer z-50 hover:opacity-75" id="toggle-menu">
-          <img src="img/icons/menu_dark.png" class="burguer-icon block w-6 h-auto" alt="">
-        </div>
-        <div class="overlay fixed bg-black top-0 left-0 w-full h-0 z-10 opacity-0 overflow-hidden" id="overlay">
-          <nav class="overlay-menu relative text-5xl text-center">
-            <ul class="list-none p-0 m-0 inline-block relative h-full">
-              <li class="block relative opacity-0">
-                <a class="block relative text-white no-underline overflow-hidden" href="/">Inicio</a>
-              </li>
-              <li class="block relative opacity-0">
-                <a class="block relative text-white no-underline overflow-hidden" href="/menu">Menú</a>
-              </li>
-              <li class="block relative opacity-0">
-                <a class="block relative text-white no-underline overflow-hidden" href="/galeria">Galería</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+    <nav class="inner-nav hidden lg:flex">
+      <ul class="pl-8 flex w-1/3 self-center">
+        <li class="inline-block pr-4 hover:text-olive hover:font-bold">
+          <a href="/">Inicio</a>
+        </li>
+        <li class="inline-block pr-4 text-olive font-bold">
+          <a href="/menu">Menú</a>
+        </li>
+        <li class="inline-block pr-4 hover:text-olive hover:font-bold">
+          <a href="/galeria">Galería</a>
+        </li>
+      </ul>
+      <div class="flex w-1/3">
+        <a href="/" class="m-auto">
+          <img src="img/logo.png" class="w-16" alt="">
+        </a>
       </div>
-      <h1 class="text-base pt-8 pb-2">MENÚ</h1>
+    </nav>
+    <div id="header" class="mx-4 lg:m-auto lg:w-3/6">
+      <div id="header-menu" class="lg:hidden my-4">
+        <a href="/">
+          <img src="img/icons/home.png" class="burguer-icon block w-6 h-auto" alt="">
+        </a>
+      </div>
+      <h1 class="text-base pb-2 lg:text-center lg:text-2xl lg:py-8">MENÚ</h1>
       <!-- Menu items -->
       <div class="menu-wrapper relative max-w-screen-sm lg:max-w-screen-md m-auto overflow-x-hidden overflow-y-hidden">
         <div class="menu h-24 box-border whitespace-no-wrap overflow-x-auto overflow-y-hidden scrolling-touch flex flex-no-wrap">
@@ -108,7 +110,7 @@
       <!-- Menu items -->
     </div>
     <!--menu list-->
-    <div class="relative">
+    <div class="relative  lg:mb-16">
       <div class="mx-4 lg:w-3/6 lg:mx-auto relative">
         <!---->
 
@@ -450,11 +452,8 @@
         </div>
 
         <!---->
- 
 
-
-
-        <div class="arrows outline-none">
+        <div class="arrows outline-none lg:hidden">
           <button class="up-arrow arrow absolute bottom-0 w-8 right-0 outline-none">
             <img src="img/icons/up-arrow.png" class="outline-none" alt="">
           </button>
@@ -466,13 +465,15 @@
     </div>
     <!--menu list-->
   </main>
-  <footer class="flex bg-olive text-white text-xs text-center py-3 absolute left-0 bottom-0 w-full h-8">
+  <footer class="flex bg-olive text-white text-xs text-center py-3 absolute left-0 bottom-0 w-full h-8 lg:left-0 lg:bottom-0 lg:w-full">
     <span class="text-white block mx-auto self-center">Desarrollado por © <a href="https://www.hornitodigital.com/" target="_blank" ><span class="underline">Hornito Digital</span></a></span>
   </footer>
+
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/horizontal-scroll.js"></script>
 <script src="js/vertical-scroll.js"></script>
+<script src="js/categories.js"></script>
 <script src="js/main.js"></script>
 </html>
